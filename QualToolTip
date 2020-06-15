@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+## creates the tooltip
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  ## border-bottom: 1px dotted black;
+}
+
+## settings for the hover box
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 255px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -300%;
+  left: -250%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+<body style="text-align:center;">
+
+<span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:25px;">Question text;<div class="tooltip"><img src="https://img.icons8.com/flat_round/64/000000/info.png" style= "height: 18px; width: 18px;"/>
+
+  <span style="font-size:11px;"><span class="tooltiptext">Tool tip text goes here</span>
+</div>
+
+</body>
+</html>
